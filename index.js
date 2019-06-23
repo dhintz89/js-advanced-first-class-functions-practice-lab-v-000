@@ -14,8 +14,8 @@ function logDriversByHometown(arr, location) {
 }
 
 function driversByRevenue(arr) {
-  let sortedList = arr;
-  sortedList.sort(function compare(a,b){
+  let driversCopy = arr;
+  driversCopy.sort(function compare(a,b){
       if(a.revenue > b.revenue) {
         return 1;
       } else if (a.revenue < b.revenue) {
@@ -24,12 +24,12 @@ function driversByRevenue(arr) {
         return 0;
       }
   });
-  return sortedList;
+  return driversCopy;
 }
 
-function driversByName(arr) {
-  const sortedList = arr.sort(function compare(a,b) {
-    a.name.localeCompare(b.name);
-  });
-  return sortedList;
-}
+// function driversByName(arr) {
+//   const sortedList = arr.sort(function compare(a,b) {
+//     a.name.localeCompare(b.name);
+//   });
+//   return sortedList;
+// }
