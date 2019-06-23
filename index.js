@@ -27,9 +27,9 @@ function driversByRevenue(arr) {
   return driversCopy;
 }
 
-// function driversByName(arr) {
-//   const sortedList = arr.sort(function compare(a,b) {
-//     a.name.localeCompare(b.name);
-//   });
-//   return sortedList;
-// }
+function driversByName(arr) {
+  const sortedList = arr.sort(function compare(a,b) {
+    a.name.localeCompare(b.name);
+  });
+  return sortedList;
+}
