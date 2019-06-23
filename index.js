@@ -30,7 +30,7 @@ function driversByRevenue(arr) {
 function driversByName(arr) {
   const driversCopy = arr.slice(0);
   driversCopy.sort(function compare(a,b) {
-    a.name.localeCompare(b.name);
+    (a.name).localeCompare(b.name);
   });
   return driversCopy;
 }
