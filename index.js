@@ -35,3 +35,11 @@ function totalRevenue(arr) {
     return acc + cur.revenue;
   },initialValue);
 }
+
+function averageRevenue(arr) {
+  let initialValue = 0;
+  const total = arr.reduce(function(acc, cur) {
+    return acc + cur.revenue;
+  },initialValue);
+  return total / arr.length;
+}
