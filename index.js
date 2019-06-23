@@ -16,13 +16,7 @@ function logDriversByHometown(arr, location) {
 function driversByRevenue(arr) {
   let driversCopy = arr.slice(0);
   driversCopy.sort(function compare(a,b){
-      if(a.revenue > b.revenue) {
-        return 1;
-      } else if (a.revenue < b.revenue) {
-        return -1;
-      } else {
-        return 0;
-      }
+    return a.revenue - b.revenue;
   });
   return driversCopy;
 }
