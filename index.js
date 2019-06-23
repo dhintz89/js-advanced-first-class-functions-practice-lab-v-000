@@ -30,5 +30,5 @@ function driversByName(arr) {
 }
 
 function totalRevenue(arr) {
-  
+  arr.reduce()
 }
