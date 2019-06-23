@@ -28,3 +28,7 @@ function driversByName(arr) {
   });
   return driversCopy;
 }
+
+function totalRevenue(arr) {
+  
+}
