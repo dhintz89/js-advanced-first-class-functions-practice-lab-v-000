@@ -30,6 +30,7 @@ function driversByName(arr) {
 }
 
 function totalRevenue(arr) {
+  let initialValue = 0;
   arr.reduce(function(acc, cur, i, arr) {
     return acc + cur.revenue;
   },0);
